@@ -31,6 +31,5 @@ ResultSet rs= stmt.executeQuery("select * from users where username='"+username+
 	}
  }
   %>
-  <a href="login.html">Home</a>
 </body>
 </html>
