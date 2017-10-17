@@ -30,7 +30,6 @@ ResultSet rs= stmt.executeQuery("select * from users where username='"+username+
  	out.println("Invalid password");
 	}
  }
- else
   %>
   <a href="login.html">Home</a>
 </body>
