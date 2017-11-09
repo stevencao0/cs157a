@@ -14,7 +14,7 @@
  session.putValue("username",username);
  String password = request.getParameter("password");
 Class.forName("com.mysql.jdbc.Driver");
-Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/registration?autoReconnect=true&useSSL=false","admin","cs157a");
+Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/registration?autoReconnect=true&useSSL=false","root","cs157a");
 Statement stmt = connect.createStatement();
 				
 ResultSet rs= stmt.executeQuery("select * from users where username='"+username+"'"); // input for mysql command
