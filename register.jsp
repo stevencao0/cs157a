@@ -25,8 +25,6 @@
  //out.println("Registered");
  %>
  
- <div class="header">
-		<h1>Registered</h1>
-	</div>
+
 </body>
 </html>
