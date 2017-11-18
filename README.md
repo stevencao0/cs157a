@@ -8,3 +8,4 @@ CREATE TABLE users (
   password varchar(100) NOT NULL,
   email varchar(100) NOT NULL
 );
+mb
