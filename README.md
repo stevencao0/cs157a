@@ -1,6 +1,6 @@
 # cs157a
 
-For Registration Database testing
+For TheMusicVault Database
 
 CREATE TABLE users (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
