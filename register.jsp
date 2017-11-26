@@ -15,7 +15,7 @@
  String password = request.getParameter("password");
  String email = request.getParameter("email");
  Class.forName("com.mysql.jdbc.Driver");
- Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/registration?autoReconnect=true&useSSL=false","root","cs157a");
+ Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/TheMusicVault?autoReconnect=true&useSSL=false","root","cs157a");
  Statement stmt = connect.createStatement();
  				
  ResultSet rs;
