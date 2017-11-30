@@ -24,7 +24,7 @@ CREATE TABLE songs (
   songID INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   songArtist varchar(100) NOT NULL,
   songName varchar(100) NOT NULL,
-  songAlbum varchar(100) NOT NULL
+  albumID INT UNSIGNED NOT NULL
 );
 
 CREATE TABLE artists (
@@ -40,7 +40,7 @@ CREATE TABLE artists (
 
 INSERT INTO albums VALUES(NULL,'Woodkid','The Golden Age',0,0,0,'18 March 2013','Orchestral Pop');
 
-INSERT INTO songs VALUES(NULL,'Woodkid','The Golden Age','The Golden Age'),(NULL,'Woodkid','The Great Escape','The Golden Age'),(NULL,'Woodkid','Boat Song','The Golden Age'),(NULL,'Woodkid','I Love You','The Golden Age'),(NULL,'Woodkid','The Shore','The Golden Age'),(NULL,'Woodkid','Ghost Lights','The Golden Age'),(NULL,'Woodkid','Shadows','The Golden Age'),(NULL,'Woodkid','Stabat Mater','The Golden Age'),(NULL,'Woodkid','Conquest of Spaces','The Golden Age'),(NULL,'Woodkid','Falling','The Golden Age'),(NULL,'Woodkid','Where I Live','The Golden Age'),(NULL,'Woodkid','Iron','The Golden Age'),(NULL,'Woodkid','The Other Side','The Golden Age');
+INSERT INTO songs VALUES(NULL,'Woodkid','The Golden Age',1),(NULL,'Woodkid','The Great Escape',1),(NULL,'Woodkid','Boat Song',1),(NULL,'Woodkid','I Love You',1),(NULL,'Woodkid','The Shore',1),(NULL,'Woodkid','Ghost Lights',1),(NULL,'Woodkid','Shadows',1),(NULL,'Woodkid','Stabat Mater',1),(NULL,'Woodkid','Conquest of Spaces',1),(NULL,'Woodkid','Falling',1),(NULL,'Woodkid','Where I Live',1),(NULL,'Woodkid','Iron',1),(NULL,'Woodkid','The Other Side',1);
 
 
 INSERT INTO artists VALUES('Woodkid','2006-present','Pop, Chamber Pop, Art Pop, Neofolk','Lyon, France','Green United Music','Yoann Lemoine (born 16 March 1983) is a French music video director, graphic designer and singer-songwriter. His most notable works include his music video direction for Katy Perry''s Teenage Dream, Taylor Swift''s single Back to December, Lana Del Rey''s Born to Die and Mystery Jets'' Dreaming of Another World.Lemoine is also a neofolk musician, going by the stage name Woodkid. On March 28, 2011, Woodkid released his first EP Iron EP, and on March 18, 2013, he released his first album titled The Golden Age, which is an autobiographical record. In June 2010, he received 5 Lions for his AIDS Awareness campaign Graffiti at the Cannes Lions Advertising festival. In 2012, Lemoine received the award for Best Director of the Year at the MVPA Awards in Los Angeles and was nominated for 6 MTV Video Music awards for his videos for Lana Del Rey, Drake, and Rihanna.');
