@@ -36,7 +36,13 @@ CREATE TABLE artists (
   bioText TEXT NOT NULL
 );
 
+CREATE TABLE ratingCheck (
+    userID INT UNSIGNED NOT NULL,
+    albumID INT UNSIGNED NOT NULL,
+    haveRated BOOLEAN NOT NULL DEFAULT FALSE
+);
 
+Note: haveRated BOOLEAN NOT NULL DEFAULT FALSE will return string 0 or 1
 
 INSERT INTO albums VALUES(NULL,'Woodkid','The Golden Age',0,0,0,'18 March 2013','Orchestral Pop');
 
