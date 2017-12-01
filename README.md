@@ -40,6 +40,7 @@ CREATE TABLE ratingCheck (
     userID INT UNSIGNED NOT NULL,
     albumID INT UNSIGNED NOT NULL,
     haveRated BOOLEAN NOT NULL DEFAULT FALSE,
+    rateValue INT UNSIGNED
     primary key (userID, albumID)
 );
 
@@ -49,6 +50,8 @@ Example to search composite key
 INSERT INTO table (Id, Name, Value)
 VALUES (1, C, 7)
 ON DUPLICATE KEY UPDATE Value = 7
+
+VALUES('userID','albumID','0',NULL)
 
 INSERT INTO albums VALUES(NULL,'Woodkid','The Golden Age',0,0,0,'18 March 2013','Orchestral Pop');
 
