@@ -36,6 +36,7 @@ CREATE TABLE artists (
   bioText TEXT NOT NULL
 );
 
+ ->(DON'T FILL ANY DATA FOR ratingCheck table!!!)
 CREATE TABLE ratingCheck (
     userID INT UNSIGNED NOT NULL,
     albumID INT UNSIGNED NOT NULL,
