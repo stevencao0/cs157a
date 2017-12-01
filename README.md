@@ -39,10 +39,16 @@ CREATE TABLE artists (
 CREATE TABLE ratingCheck (
     userID INT UNSIGNED NOT NULL,
     albumID INT UNSIGNED NOT NULL,
-    haveRated BOOLEAN NOT NULL DEFAULT FALSE
+    haveRated BOOLEAN NOT NULL DEFAULT FALSE,
+    primary key (userID, albumID)
 );
 
 Note: haveRated BOOLEAN NOT NULL DEFAULT FALSE will return string 0 or 1
+Example to search composite key
+
+INSERT INTO table (Id, Name, Value)
+VALUES (1, C, 7)
+ON DUPLICATE KEY UPDATE Value = 7
 
 INSERT INTO albums VALUES(NULL,'Woodkid','The Golden Age',0,0,0,'18 March 2013','Orchestral Pop');
 
