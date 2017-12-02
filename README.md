@@ -71,14 +71,7 @@ CREATE TABLE ratingCheck (
     primary key (userID, albumID)
 );
 
-Note: haveRated BOOLEAN NOT NULL DEFAULT FALSE will return string 0 or 1
-Example to search composite key
 
-INSERT INTO table (Id, Name, Value)
-VALUES (1, C, 7)
-ON DUPLICATE KEY UPDATE Value = 7
-
-VALUES('userID','albumID','0',NULL)
 
 INSERT INTO albums VALUES(NULL,'Woodkid','The Golden Age',0,0,0,'18 March 2013','Orchestral Pop');
 
