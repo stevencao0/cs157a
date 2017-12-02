@@ -20,12 +20,29 @@ CREATE TABLE albums (
   albumGenre varchar(100) NOT NULL
 );
 
+Ex) Albums
+  albumID // NULL
+  albumArtist // Woodkid
+  albumName // The Golden Age
+  albumRating // 0
+  totalScore // 0
+  ratingAmt // 0
+  albumDate // 18 March 2013
+  albumGenre // Orchestral Pop
+
+
 CREATE TABLE songs (
   songID INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   songArtist varchar(100) NOT NULL,
   songName varchar(100) NOT NULL,
   albumID INT UNSIGNED NOT NULL
 );
+
+Ex) Songs
+  songID // NULL
+  songArtist // Woodkid
+  songName // Boat Song
+  albumID // (w/e albumID it's attached to)
 
 CREATE TABLE artists (
   artistName varchar(100) NOT NULL,
@@ -35,6 +52,15 @@ CREATE TABLE artists (
   artistLabels varchar(100) NOT NULL,
   bioText TEXT NOT NULL
 );
+Ex)Artists
+  artistName // Woodkid
+  artistDate //Years-Active
+  artistGenre // Pop, Chamber Pop, Neofolk
+  artistOrigin // Lyon, France
+  artistLabels // Green United Music
+  bioText  // any biograph text. I took some text from the wikipedia.
+
+
 
  ->(DON'T FILL ANY DATA FOR ratingCheck table!!!)
 CREATE TABLE ratingCheck (
