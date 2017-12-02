@@ -1,0 +1,247 @@
+@charset "ISO-8859-1";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-size: 120%;
+	background: #F8F8FF;
+}
+
+.header {
+	width: 30%;
+	margin: 50px auto 0px;
+	color: white;
+	background: #5F9EA0;
+	text-align: center;
+	border: 1px solid #B0C4DE;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+}
+form, .content {
+	width: 30%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+ .tableUI {
+
+	width: 480px;
+	padding: 10px;
+	font: arial, sans-serif;
+
+}
+/*
+	 margin-top:200px;
+    margin-left: 120px; 
+*/
+
+
+table {
+    counter-reset: rowNumber;
+}
+
+ tr {
+    counter-increment: rowNumber;
+}
+
+tr td:first-child::before {
+    content: counter(rowNumber);
+    color:grey;
+    padding: 5px;
+    font: arial, sans-serif;
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
+
+/*
+width: 300px;
+  margin-left: 35px; 
+*/
+
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+}
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.btn {
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: #5F9EA0;
+	border: none;
+	border-radius: 5px;
+}
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
+
+.imagePosition{
+position:absolute;
+display: inline-block;
+
+
+}
+
+.emptyBox{
+	/*
+	height:100%;
+	*/
+	width: 316px;
+	 font: arial, sans-serif;
+	 /*
+	background:green;
+	border: 1px solid black;
+	*/
+	display: inline-block;
+
+	vertical-align: top;
+}
+
+.albumTable{
+	
+	vertical-align: top;
+	
+	margin-left: 40px; 
+	
+	display: inline-block;
+	
+
+	width:50%;
+	height:400px;
+
+	
+}
+
+.fit{
+	width:100px;
+	height:20px;
+	font: 12px bold arial, sans-serif;
+}
+
+ .albumCell{
+
+display:inline-block;
+margin:10px auto;
+width:102px;
+height:120px;
+}
+
+
+.descriptionBox{
+
+  width:50%;
+  margin-left: 360px; 
+   font: arial, sans-serif;
+   
+ 
+
+	display: inline-block;
+}
+.padding{
+    padding: 5px 10px;
+}
+.container{
+	width: 960px;
+	margin: 0px auto;
+	
+	border: 1px solid black;
+	
+
+
+}
+
+
+hr { 
+    display: block;
+    height: 1px;
+    border: 0;
+   border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+} 
+
+.infoBoldColor{
+	color: #696969;
+}
+
+div.inline { float:left; }
+.clearBoth { clear:both; }
+
+/*
+#fitin {
+    width: 50px;
+    border: 1px solid black;
+    overflow: hidden;
+    font-size: 1em;
+    vertical-align: middle;
+    
+}
+*/
+	
+
+
+
+
+
+div.rating-cancel,div.star-rating{
+	float:left;
+	width:17px;
+	height:15px;
+	text-indent:-999em;
+	cursor:pointer;
+	display:block;
+	background:transparent;
+	overflow:hidden;}
+div.rating-cancel,div.rating-cancel a{
+	background:url("delete.gif") no-repeat 0 -16px
+	}
+div.star-rating,div.star-rating a{
+	background:url("star.gif") no-repeat 0 0px
+	}
+div.rating-cancel a,div.star-rating a{
+	display:block;
+	width:16px;
+	height:100%;
+	background-position:0 0px;
+	border:0}
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+
+
