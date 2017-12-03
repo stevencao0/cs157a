@@ -67,7 +67,7 @@ CREATE TABLE ratingCheck (
     userID INT UNSIGNED NOT NULL,
     albumID INT UNSIGNED NOT NULL,
     haveRated BOOLEAN NOT NULL DEFAULT FALSE,
-    rateValue INT UNSIGNED
+    rateValue INT UNSIGNED,
     primary key (userID, albumID)
 );
 
