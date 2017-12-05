@@ -45,7 +45,7 @@ Ex) Songs
   albumID // (w/e albumID it's attached to)
 
 CREATE TABLE artists (
-  artistName varchar(100) NOT NULL,
+  artistName varchar(100) NOT NULL PRIMARY KEY,
   artistDate varchar(100) NOT NULL,
   artistGenre varchar(100) NOT NULL,
   artistOrigin varchar(100) NOT NULL,
