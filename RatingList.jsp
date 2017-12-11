@@ -29,7 +29,7 @@
    </a>
    </li>
    
-   <li class="c-nav__content u-centered" style="width: 81%">
+   <li class="c-nav__content u-centered" style="width: 83%">
                             <font size="25" face="impact"><b>The Music Vault</b>  </font> 
 	</li>
 
@@ -146,6 +146,15 @@
 			  <button type="submit" class="c-button c-button--info" name="action" value="deleteRating">Unrate</button>
 			</span>
 			
+			
+			<!--
+						<div class="input-group" style = "display:inline-block">
+							<button type="submit" class="btn" name="action" value="submitRating">Rate</button>
+						</div>
+						<div class="input-group" style = "display:inline-block">
+							<button type="submit" class="btn" name="action" value="deleteRating">Unrate</button>
+						</div>
+							-->
 						
 				</div>		
 				</form>  		

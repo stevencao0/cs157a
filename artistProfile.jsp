@@ -35,7 +35,7 @@
    </a>
    </li>
    
-   <li class="c-nav__content u-centered" style="width: 81%">
+   <li class="c-nav__content u-centered" style="width: 83%">
                             <font size="25" face="impact"><b>The Music Vault</b>  </font> 
 	</li>
 

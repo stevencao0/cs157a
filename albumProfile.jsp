@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="blaze.min.css"> 
   <link rel="stylesheet" href="blaze.colors.min.css"> 
 
+						<!-- https://www.blazeui.com/getting-started/install -->
    <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -27,7 +28,7 @@
    </a>
    </li>
    
-   <li class="c-nav__content u-centered" style="width: 81%">
+   <li class="c-nav__content u-centered" style="width: 83%">
                             <font size="25" face="impact"><b>The Music Vault</b>  </font> 
 	</li>
 
@@ -116,6 +117,8 @@
 			</div>
 
 	</div>
+
+
 
 </div>
 </body>

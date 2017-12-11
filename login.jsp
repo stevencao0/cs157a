@@ -19,7 +19,7 @@ Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/Th
 PreparedStatement stmt = connect.prepareStatement("select * from users where username=? and password=?");
 
 //Using prepared statements allows us to use inputs as parameters instead of allowing user input directly into the mysql command.
-
+//This can help avoid SQL Injection Attacks.
 
 stmt.setString(1,username); // first ?, username =?
 stmt.setString(2,password); // second ?, password =?
@@ -40,7 +40,7 @@ request.setAttribute("username", username);
  else // Failed if account/password not found/match
  {
 	%>
-	  <script>
+	  <script>	<!-- Could probably have something better than this, but it does the job--> 
 	  alert("Invalid Username Or Password") <!-- Pop up message -->
 	  location="login2.html"  <!-- sends to login.html page (otherwise it would be blank page w/ pop up) --> 
 	  </script>
